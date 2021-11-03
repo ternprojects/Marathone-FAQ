@@ -1,0 +1,120 @@
+.header__title {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.header {
+  background-image: url(../images/header/mobile_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  &__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $main-font;
+    color: $white;
+    font-weight: 700;
+    margin: 0;
+    display: inline-block;
+    
+    &-span,
+    &-span-sec {
+      &::before,
+      &::after {
+        font-size: 20px;
+        font-weight: 900;
+        color: $orange;
+      }
+
+      &::before {
+        content: '<';
+      }
+
+      &::after {
+        content: '>';
+      }
+    }
+
+    &-span-sec {
+      &::before {
+        content: '</';
+      }
+    }
+  }
+}
+
+.site-logo {
+  display: block;
+  width: 100px;
+}
+
+@media (max-width: 767px) {
+  .site-logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(../images/header/tablet_bg.jpg);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__title {
+      font-size: 30px;
+
+      &-span,
+      &-span-sec {
+        &::before,
+        &::after {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.site-logo {
+}
+
+@media (min-width: 1200px) {
+  .header {
+    background-image: url(../images/header/desktop_bg.jpg);
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    &__title {
+      font-size: 48px;
+
+      &-span,
+      &-span-sec {
+        &::before,
+        &::after {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}

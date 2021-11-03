@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marathone-FAQ</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endinject -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper row justify-content-center align-items-center justify-content-md-between">
+            <div class="col-12 col-md-4">
+              <a href="#" class="site-logo">
+                <img src="./images/header/logo.png" alt="" class="site-logo__img" alt="Go It">
+              </a>
+            </div>
+            <div class="col-12 col-md-8">
+              <h1 class="header__title">
+                <span class="header__title-span">Вопросы</span>
+                и
+                <span class="header__title-span-sec">ответы</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
+        <main class="main">
+          <div class="container">
+            <ul class="nav nav-tabs mt-2 mb-2" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="day_1-tab" data-toggle="tab" href="#day_1" role="tab" aria-controls="day_1"
+                  aria-selected="true">День 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="day_2-tab" data-toggle="tab" href="#day_2" role="tab" aria-controls="day_2"
+                  aria-selected="false">День 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="day_3-tab" data-toggle="tab" href="#day_3" role="tab" aria-controls="day_3"
+                  aria-selected="false">День 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="day_4-tab" data-toggle="tab" href="#day_4" role="tab" aria-controls="day_4"
+                  aria-selected="false">День 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="day_5-tab" data-toggle="tab" href="#day_5" role="tab" aria-controls="day_5"
+                  aria-selected="false">День 5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="day_6-tab" data-toggle="tab" href="#day_6" role="tab" aria-controls="day_6"
+                  aria-selected="false">День 6</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="day_7-tab" data-toggle="tab" href="#day_7" role="tab" aria-controls="day_7"
+                  aria-selected="false">День 7</a>
+              </li>
+            </ul>
+        
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="day_1" role="tabpanel" aria-labelledby="day_1-tab">
+                <section class="question-answer">
+                  <h2 class="faq-title title">FAQ List</h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                          <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            *Вопрос №x*
+                          </button>
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>*Ответ на вопрос №x*.</p>
+                          <ul class="tab row justify-content-center">
+                            <li class="true col-12 col-md-4">
+                              <svg class="icons smile">
+                                <use href="./images/smiles-sprite.svg#icon-smile"></use>
+                              </svg>
+                              <span>true</span>
+                            </li>
+                            <li class="false col-12 col-md-4">
+                              <svg class="icons sad">
+                                <use href="./images/smiles-sprite.svg#icon-sad"></use>
+                              </svg>
+                              <span>false</span>
+                            </li>
+                          </ul>
+                          <div class="sample-box row justify-content-around">
+                            <figure class="sample-box__item sample-box--false">
+                              <img class="sample-box__item-img sample-box__item-img--false" src="./images/header/code.png" alt="false" width="300" height="300" />
+                              <figcaption>Не правильно</figcaption>
+                            </figure>
+                            <figure class="sample-box__item sample-box--true">
+                              <img class="sample-box__item-img sample-box__item-img--true" src="./images/header/code.png" alt="true" width="300" height="300" />
+                              <figcaption>Правильно</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="day_2" role="tabpanel" aria-labelledby="day_2-tab">
+                <section class="question-answer">
+                  <h2 class="faq-title title">FAQ List</h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                          <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            *Вопрос №x*
+                          </button>
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>*Ответ на вопрос №x*.</p>
+                          <ul class="tab row justify-content-center">
+                            <li class="true col-12 col-md-4">
+                              <svg class="icons smile">
+                                <use href="./images/smiles-sprite.svg#icon-smile"></use>
+                              </svg>
+                              <span>true</span>
+                            </li>
+                            <li class="false col-12 col-md-4">
+                              <svg class="icons sad">
+                                <use href="./images/smiles-sprite.svg#icon-sad"></use>
+                              </svg>
+                              <span>false</span>
+                            </li>
+                          </ul>
+                          <div class="sample-box row justify-content-around">
+                            <figure class="sample-box__item sample-box--false">
+                              <img class="sample-box__item-img sample-box__item-img--false" src="./images/header/code.png" alt="false" width="300" height="300" />
+                              <figcaption>Не правильно</figcaption>
+                            </figure>
+                            <figure class="sample-box__item sample-box--true">
+                              <img class="sample-box__item-img sample-box__item-img--true" src="./images/header/code.png" alt="true" width="300" height="300" />
+                              <figcaption>Правильно</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="day_3" role="tabpanel" aria-labelledby="day_3-tab">
+                <section class="question-answer">
+                  <h2 class="faq-title title">FAQ List</h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                          <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            *Вопрос №x*
+                          </button>
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>*Ответ на вопрос №x*.</p>
+                          <ul class="tab row justify-content-center">
+                            <li class="true col-12 col-md-4">
+                              <svg class="icons smile">
+                                <use href="./images/smiles-sprite.svg#icon-smile"></use>
+                              </svg>
+                              <span>true</span>
+                            </li>
+                            <li class="false col-12 col-md-4">
+                              <svg class="icons sad">
+                                <use href="./images/smiles-sprite.svg#icon-sad"></use>
+                              </svg>
+                              <span>false</span>
+                            </li>
+                          </ul>
+                          <div class="sample-box row justify-content-around">
+                            <figure class="sample-box__item sample-box--false">
+                              <img class="sample-box__item-img sample-box__item-img--false" src="./images/header/code.png" alt="false" width="300" height="300" />
+                              <figcaption>Не правильно</figcaption>
+                            </figure>
+                            <figure class="sample-box__item sample-box--true">
+                              <img class="sample-box__item-img sample-box__item-img--true" src="./images/header/code.png" alt="true" width="300" height="300" />
+                              <figcaption>Правильно</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="day_4" role="tabpanel" aria-labelledby="day_4-tab">
+                <section class="question-answer">
+                  <h2 class="faq-title title">FAQ List</h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                          <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            *Вопрос №x*
+                          </button>
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>*Ответ на вопрос №x*.</p>
+                          <ul class="tab row justify-content-center">
+                            <li class="true col-12 col-md-4">
+                              <svg class="icons smile">
+                                <use href="./images/smiles-sprite.svg#icon-smile"></use>
+                              </svg>
+                              <span>true</span>
+                            </li>
+                            <li class="false col-12 col-md-4">
+                              <svg class="icons sad">
+                                <use href="./images/smiles-sprite.svg#icon-sad"></use>
+                              </svg>
+                              <span>false</span>
+                            </li>
+                          </ul>
+                          <div class="sample-box row justify-content-around">
+                            <figure class="sample-box__item sample-box--false">
+                              <img class="sample-box__item-img sample-box__item-img--false" src="./images/header/code.png" alt="false" width="300" height="300" />
+                              <figcaption>Не правильно</figcaption>
+                            </figure>
+                            <figure class="sample-box__item sample-box--true">
+                              <img class="sample-box__item-img sample-box__item-img--true" src="./images/header/code.png" alt="true" width="300" height="300" />
+                              <figcaption>Правильно</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="day_5" role="tabpanel" aria-labelledby="day_5-tab">
+                <section class="question-answer">
+                  <h2 class="faq-title title">FAQ List</h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                          <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            *Вопрос №x*
+                          </button>
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>*Ответ на вопрос №x*.</p>
+                          <ul class="tab row justify-content-center">
+                            <li class="true col-12 col-md-4">
+                              <svg class="icons smile">
+                                <use href="./images/smiles-sprite.svg#icon-smile"></use>
+                              </svg>
+                              <span>true</span>
+                            </li>
+                            <li class="false col-12 col-md-4">
+                              <svg class="icons sad">
+                                <use href="./images/smiles-sprite.svg#icon-sad"></use>
+                              </svg>
+                              <span>false</span>
+                            </li>
+                          </ul>
+                          <div class="sample-box row justify-content-around">
+                            <figure class="sample-box__item sample-box--false">
+                              <img class="sample-box__item-img sample-box__item-img--false" src="./images/header/code.png" alt="false" width="300" height="300" />
+                              <figcaption>Не правильно</figcaption>
+                            </figure>
+                            <figure class="sample-box__item sample-box--true">
+                              <img class="sample-box__item-img sample-box__item-img--true" src="./images/header/code.png" alt="true" width="300" height="300" />
+                              <figcaption>Правильно</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="day_6" role="tabpanel" aria-labelledby="day_6-tab">
+                <section class="question-answer">
+                  <h2 class="faq-title title">FAQ List</h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                          <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            *Вопрос №x*
+                          </button>
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>*Ответ на вопрос №x*.</p>
+                          <ul class="tab row justify-content-center">
+                            <li class="true col-12 col-md-4">
+                              <svg class="icons smile">
+                                <use href="./images/smiles-sprite.svg#icon-smile"></use>
+                              </svg>
+                              <span>true</span>
+                            </li>
+                            <li class="false col-12 col-md-4">
+                              <svg class="icons sad">
+                                <use href="./images/smiles-sprite.svg#icon-sad"></use>
+                              </svg>
+                              <span>false</span>
+                            </li>
+                          </ul>
+                          <div class="sample-box row justify-content-around">
+                            <figure class="sample-box__item sample-box--false">
+                              <img class="sample-box__item-img sample-box__item-img--false" src="./images/header/code.png" alt="false" width="300" height="300" />
+                              <figcaption>Не правильно</figcaption>
+                            </figure>
+                            <figure class="sample-box__item sample-box--true">
+                              <img class="sample-box__item-img sample-box__item-img--true" src="./images/header/code.png" alt="true" width="300" height="300" />
+                              <figcaption>Правильно</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="day_7" role="tabpanel" aria-labelledby="day_7-tab">
+                <section class="question-answer">
+                  <h2 class="faq-title title">FAQ List</h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                          <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            *Вопрос №x*
+                          </button>
+                        </h3>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>*Ответ на вопрос №x*.</p>
+                          <ul class="tab row justify-content-center">
+                            <li class="true col-12 col-md-4">
+                              <svg class="icons smile">
+                                <use href="./images/smiles-sprite.svg#icon-smile"></use>
+                              </svg>
+                              <span>true</span>
+                            </li>
+                            <li class="false col-12 col-md-4">
+                              <svg class="icons sad">
+                                <use href="./images/smiles-sprite.svg#icon-sad"></use>
+                              </svg>
+                              <span>false</span>
+                            </li>
+                          </ul>
+                          <div class="sample-box row justify-content-around">
+                            <figure class="sample-box__item sample-box--false">
+                              <img class="sample-box__item-img sample-box__item-img--false" src="./images/header/code.png" alt="false" width="300" height="300" />
+                              <figcaption>Не правильно</figcaption>
+                            </figure>
+                            <figure class="sample-box__item sample-box--true">
+                              <img class="sample-box__item-img sample-box__item-img--true" src="./images/header/code.png" alt="true" width="300" height="300" />
+                              <figcaption>Правильно</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </main>
+
+      <footer class="footer">
+          <p class="copyright answer container">development by Bootcamp 21</p>
+      </footer>
+    </div>
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+    <script src="js/scripts.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

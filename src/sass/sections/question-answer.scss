@@ -1,0 +1,34 @@
+.card-header {
+    padding: 0;
+}
+
+.question {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    text-decoration: none;
+    padding: .75rem 1.25rem;
+    background-color: $violet;
+    color: $white;
+    line-height: 1.2;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        background-color: $violet;
+        color: $white;
+    }
+}
+
+.question.collapsed {
+    background-color: inherit;
+    color: inherit;
+
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+        background-color: $violet;
+    }
+}
+

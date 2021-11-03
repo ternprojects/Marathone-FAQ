@@ -1,0 +1,23 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+
+@import './bootstrap/bootstrap.scss';
+@import './bootstrap/bootstrap-grid.scss';
+@import './bootstrap/bootstrap-reboot.scss';
+
+@import './helpers/fonts.scss';
+@import './helpers/variables.scss';
+@import './helpers/visually-hidden.scss';
+
+@import 'base.scss';
+
+@import './components/question-answer.scss';
+@import './components/sample-box';
+@import './components/example-text.scss';
+
+@import './sections/header.scss';
+@import './sections/main.scss';
+@import './sections/footer.scss';

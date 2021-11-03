@@ -1,0 +1,67 @@
+.main {
+  background-color: #efefef;
+  padding: 40px 0 80px;
+  flex: 2 0 auto;
+}
+
+main .container {
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border-radius: 0.25rem;
+}
+
+.tab {
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+}
+
+.nav {
+  @media (min-width: 320px) and (max-width: 441px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 719px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 720px) and (max-width: 991px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.nav-tabs .nav-link {
+  background-color: #F8F9FA;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #fff;
+  background: #fe6907;
+  border: 1px solid #fe6907;
+}
+
+

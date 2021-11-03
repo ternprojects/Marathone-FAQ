@@ -1,0 +1,37 @@
+.sample-box {
+  figcaption {
+    margin-top: 8px;
+  }
+
+  &__item {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 800;
+  }
+
+  &__item-img {
+    display: block;
+    width: 300px;
+    border: 6px solid;
+    object-fit: cover;
+
+    &--false {
+      border-color: $light-red;
+    }
+
+    &--true {
+      color: $light-green;
+    }
+  }
+
+  &--false {
+    color: $light-red;
+  }
+
+  &--true {
+    color: $light-green;
+  }
+}
+
